@@ -1,4 +1,4 @@
-#(©)Codexbotz
+# (©) Nanthakps
 
 import base64
 import re
