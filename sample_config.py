@@ -1,13 +1,8 @@
 # (©) Nanthakps
 
-
-
-
 import os
 import logging
 from logging.handlers import RotatingFileHandler
-
-
 
 #Bot token @Botfather
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
