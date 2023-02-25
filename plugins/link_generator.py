@@ -43,8 +43,11 @@ async def batch(client: Client, message: Message):
     await second_message.reply_text(f"<b>Here is your link</b>\n\n{link}", quote=True, reply_markup=reply_markup)
 
 
-@Bot.on_message(filters.private & filters.user(ADMINS) & filters.command('genlink'))
-async def link_generator(client: Client, message: Message):
+@Bot.on_message(filters.command('users') & filters.private & filters.user(ADMINS) & filters.command('batch'))
+async def batch(client: Client, message: Message):
+    msg = await client.send_message(chat_id=message.chat.id, text=WAIT_MSG)
+    users = await full_userbase()
+    await msg.edit(f"{len(users)} users are using this bot")
     while True:
         try:
             channel_message = await client.ask(text = "Forward Message from the DB Channel (with Quotes)..\nor Send the DB Channel Post link", chat_id = message.from_user.id, filters=(filters.forwarded | (filters.text & ~filters.forwarded)), timeout=60)
