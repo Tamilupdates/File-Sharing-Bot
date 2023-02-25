@@ -7,7 +7,7 @@
     "sharing"
   ],
   "repository": "https://github.com/Tamilupdates/File-Sharing-Bot",
-  "logo": "https://ibb.co/FgPVtzw",
+  "logo": "",
   "env": {
     "TG_BOT_TOKEN": {
       "description": "Your Bot token, Get it from @Botfather",
@@ -68,7 +68,7 @@
   "formation": {
     "worker": {
       "quantity": 1,
-      "size": "free"
+      "size": "eco"
     }
   }
 }
