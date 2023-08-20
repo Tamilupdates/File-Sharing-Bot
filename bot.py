@@ -66,7 +66,7 @@ class Bot(Client):
             sys.exit()
 
         self.set_parse_mode(ParseMode.HTML)
-        self.LOGGER(__name__).info(f"Bot Running..!\n\nCreated by \nhttps://telegram.me/Nanthakps")
+        self.LOGGER(__name__).info(f"Bot Running..!\n\nCreated by \nhttps://telegram.me/TamilupdatesOfficial")
         self.LOGGER(__name__).info(f""" \n\n       
 ███╗░░██╗░█████╗░███╗░░██╗████████╗██╗░░██╗░█████╗░██╗░░██╗██████╗░░██████╗
 ████╗░██║██╔══██╗████╗░██║╚══██╔══╝██║░░██║██╔══██╗██║░██╔╝██╔══██╗██╔════╝
