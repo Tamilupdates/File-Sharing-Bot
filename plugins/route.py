@@ -1,9 +1,4 @@
 # (©) Nanthakps
-#rymme
-
-
-
-
 
 from aiohttp import web
 
